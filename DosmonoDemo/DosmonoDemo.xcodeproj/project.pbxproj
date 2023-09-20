@@ -1,0 +1,955 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D9A67A76707DFD7EA759CD9 /* Pods_DosmonoDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0830225FAB484FC3B19E625E /* Pods_DosmonoDemoTests.framework */; };
+		3B90AA2C67A4CBC44A2D0A9C /* Pods_DosmonoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEA40939E4C43018D0E65A2 /* Pods_DosmonoDemo.framework */; };
+		76FD77193EB5EADCACCC03A7 /* Pods_DosmonoDemo_DosmonoDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B563CE75D06DA3526BAC38E3 /* Pods_DosmonoDemo_DosmonoDemoUITests.framework */; };
+		B38948242ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B38948222ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.m */; };
+		B38948252ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38948232ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.xib */; };
+		B38948292ABABA1600A0C05E /* AudioFileListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B38948282ABABA1600A0C05E /* AudioFileListModel.m */; };
+		B38948332ABB017000A0C05E /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38948322ABB016F00A0C05E /* Speech.framework */; };
+		F81DEDB2256E397200953C6C /* InstructionsList.m in Sources */ = {isa = PBXBuildFile; fileRef = F81DEDB1256E397200953C6C /* InstructionsList.m */; };
+		F81DEDB8256E3E4800953C6C /* InstructionsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F81DEDB7256E3E4800953C6C /* InstructionsListCell.m */; };
+		F8AF75F2256B5F6D00F32199 /* DeviceList.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AF75F1256B5F6D00F32199 /* DeviceList.m */; };
+		F8AF75F8256B610F00F32199 /* DeviceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AF75F7256B610F00F32199 /* DeviceListCell.m */; };
+		F8AF7600256B914100F32199 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AF75FF256B914100F32199 /* DetailViewController.m */; };
+		F8D9BDDF2567EBCA009028C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D9BDDE2567EBCA009028C8 /* AppDelegate.m */; };
+		F8D9BDE22567EBCA009028C8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D9BDE12567EBCA009028C8 /* SceneDelegate.m */; };
+		F8D9BDE52567EBCA009028C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D9BDE42567EBCA009028C8 /* ViewController.m */; };
+		F8D9BDE82567EBCA009028C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D9BDE62567EBCA009028C8 /* Main.storyboard */; };
+		F8D9BDEA2567EBCC009028C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D9BDE92567EBCC009028C8 /* Assets.xcassets */; };
+		F8D9BDED2567EBCC009028C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D9BDEB2567EBCC009028C8 /* LaunchScreen.storyboard */; };
+		F8D9BDF02567EBCC009028C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D9BDEF2567EBCC009028C8 /* main.m */; };
+		F8D9BDFA2567EBCC009028C8 /* DosmonoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D9BDF92567EBCC009028C8 /* DosmonoDemoTests.m */; };
+		F8D9BE052567EBCD009028C8 /* DosmonoDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D9BE042567EBCD009028C8 /* DosmonoDemoUITests.m */; };
+		F8D9BE5F2567F0E1009028C8 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D9BE5E2567F0E1009028C8 /* Helper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8D9BDF62567EBCC009028C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D9BDD22567EBCA009028C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8D9BDD92567EBCA009028C8;
+			remoteInfo = DosmonoDemo;
+		};
+		F8D9BE012567EBCD009028C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D9BDD22567EBCA009028C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8D9BDD92567EBCA009028C8;
+			remoteInfo = DosmonoDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0830225FAB484FC3B19E625E /* Pods_DosmonoDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DosmonoDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D4823438499344B0F98FEA8 /* Pods-DosmonoDemo-DosmonoDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DosmonoDemo-DosmonoDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-DosmonoDemo-DosmonoDemoUITests/Pods-DosmonoDemo-DosmonoDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DEA40939E4C43018D0E65A2 /* Pods_DosmonoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DosmonoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E0807F66FE4EF5C0AB2178 /* Pods-DosmonoDemo-DosmonoDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DosmonoDemo-DosmonoDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-DosmonoDemo-DosmonoDemoUITests/Pods-DosmonoDemo-DosmonoDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A6EE5271DD3F33199FEA8F6A /* Pods-DosmonoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DosmonoDemo.debug.xcconfig"; path = "Target Support Files/Pods-DosmonoDemo/Pods-DosmonoDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A863E8DEC49529902FE04A0B /* Pods-DosmonoDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DosmonoDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-DosmonoDemoTests/Pods-DosmonoDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B38948212ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioFilesListCollectionViewCell.h; sourceTree = "<group>"; };
+		B38948222ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioFilesListCollectionViewCell.m; sourceTree = "<group>"; };
+		B38948232ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioFilesListCollectionViewCell.xib; sourceTree = "<group>"; };
+		B38948272ABABA1600A0C05E /* AudioFileListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioFileListModel.h; sourceTree = "<group>"; };
+		B38948282ABABA1600A0C05E /* AudioFileListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioFileListModel.m; sourceTree = "<group>"; };
+		B38948322ABB016F00A0C05E /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		B563CE75D06DA3526BAC38E3 /* Pods_DosmonoDemo_DosmonoDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DosmonoDemo_DosmonoDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47F30BDF3AC5F99BEA8F57A /* Pods-DosmonoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DosmonoDemo.release.xcconfig"; path = "Target Support Files/Pods-DosmonoDemo/Pods-DosmonoDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CC20CFF2A361F2BD4E2E7E33 /* Pods-DosmonoDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DosmonoDemoTests.release.xcconfig"; path = "Target Support Files/Pods-DosmonoDemoTests/Pods-DosmonoDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F81DEDB0256E397200953C6C /* InstructionsList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstructionsList.h; sourceTree = "<group>"; };
+		F81DEDB1256E397200953C6C /* InstructionsList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstructionsList.m; sourceTree = "<group>"; };
+		F81DEDB6256E3E4800953C6C /* InstructionsListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstructionsListCell.h; sourceTree = "<group>"; };
+		F81DEDB7256E3E4800953C6C /* InstructionsListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstructionsListCell.m; sourceTree = "<group>"; };
+		F8AF75E3256B542E00F32199 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F8AF75F0256B5F6D00F32199 /* DeviceList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceList.h; sourceTree = "<group>"; };
+		F8AF75F1256B5F6D00F32199 /* DeviceList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceList.m; sourceTree = "<group>"; };
+		F8AF75F6256B610F00F32199 /* DeviceListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceListCell.h; sourceTree = "<group>"; };
+		F8AF75F7256B610F00F32199 /* DeviceListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceListCell.m; sourceTree = "<group>"; };
+		F8AF75FE256B914100F32199 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F8AF75FF256B914100F32199 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		F8D9BDDA2567EBCA009028C8 /* Whisprly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whisprly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D9BDDD2567EBCA009028C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8D9BDDE2567EBCA009028C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8D9BDE02567EBCA009028C8 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F8D9BDE12567EBCA009028C8 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F8D9BDE32567EBCA009028C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F8D9BDE42567EBCA009028C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F8D9BDE72567EBCA009028C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8D9BDE92567EBCC009028C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8D9BDEC2567EBCC009028C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8D9BDEE2567EBCC009028C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D9BDEF2567EBCC009028C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8D9BDF52567EBCC009028C8 /* DosmonoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DosmonoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D9BDF92567EBCC009028C8 /* DosmonoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DosmonoDemoTests.m; sourceTree = "<group>"; };
+		F8D9BDFB2567EBCC009028C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D9BE002567EBCD009028C8 /* DosmonoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DosmonoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D9BE042567EBCD009028C8 /* DosmonoDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DosmonoDemoUITests.m; sourceTree = "<group>"; };
+		F8D9BE062567EBCD009028C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D9BE5D2567F0E1009028C8 /* Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		F8D9BE5E2567F0E1009028C8 /* Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8D9BDD72567EBCA009028C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B90AA2C67A4CBC44A2D0A9C /* Pods_DosmonoDemo.framework in Frameworks */,
+				B38948332ABB017000A0C05E /* Speech.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D9BDF22567EBCC009028C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D9A67A76707DFD7EA759CD9 /* Pods_DosmonoDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D9BDFD2567EBCD009028C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FD77193EB5EADCACCC03A7 /* Pods_DosmonoDemo_DosmonoDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C37B3B72F4D2DD6736E8866 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6EE5271DD3F33199FEA8F6A /* Pods-DosmonoDemo.debug.xcconfig */,
+				C47F30BDF3AC5F99BEA8F57A /* Pods-DosmonoDemo.release.xcconfig */,
+				3D4823438499344B0F98FEA8 /* Pods-DosmonoDemo-DosmonoDemoUITests.debug.xcconfig */,
+				70E0807F66FE4EF5C0AB2178 /* Pods-DosmonoDemo-DosmonoDemoUITests.release.xcconfig */,
+				A863E8DEC49529902FE04A0B /* Pods-DosmonoDemoTests.debug.xcconfig */,
+				CC20CFF2A361F2BD4E2E7E33 /* Pods-DosmonoDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		98817E3C194145F8A58E40D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B38948322ABB016F00A0C05E /* Speech.framework */,
+				3DEA40939E4C43018D0E65A2 /* Pods_DosmonoDemo.framework */,
+				B563CE75D06DA3526BAC38E3 /* Pods_DosmonoDemo_DosmonoDemoUITests.framework */,
+				0830225FAB484FC3B19E625E /* Pods_DosmonoDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B38948262ABAB9FC00A0C05E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B38948272ABABA1600A0C05E /* AudioFileListModel.h */,
+				B38948282ABABA1600A0C05E /* AudioFileListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8AF75FC256B90FE00F32199 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8AF75F0256B5F6D00F32199 /* DeviceList.h */,
+				F8AF75F1256B5F6D00F32199 /* DeviceList.m */,
+				F8AF75F6256B610F00F32199 /* DeviceListCell.h */,
+				F8AF75F7256B610F00F32199 /* DeviceListCell.m */,
+				F81DEDB0256E397200953C6C /* InstructionsList.h */,
+				F81DEDB1256E397200953C6C /* InstructionsList.m */,
+				F81DEDB6256E3E4800953C6C /* InstructionsListCell.h */,
+				F81DEDB7256E3E4800953C6C /* InstructionsListCell.m */,
+				B38948212ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.h */,
+				B38948222ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.m */,
+				B38948232ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8D9BDD12567EBCA009028C8 = {
+			isa = PBXGroup;
+			children = (
+				F8D9BDDC2567EBCA009028C8 /* DosmonoDemo */,
+				F8D9BDF82567EBCC009028C8 /* DosmonoDemoTests */,
+				F8D9BE032567EBCD009028C8 /* DosmonoDemoUITests */,
+				F8D9BDDB2567EBCA009028C8 /* Products */,
+				1C37B3B72F4D2DD6736E8866 /* Pods */,
+				98817E3C194145F8A58E40D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F8D9BDDB2567EBCA009028C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8D9BDDA2567EBCA009028C8 /* Whisprly.app */,
+				F8D9BDF52567EBCC009028C8 /* DosmonoDemoTests.xctest */,
+				F8D9BE002567EBCD009028C8 /* DosmonoDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8D9BDDC2567EBCA009028C8 /* DosmonoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B38948262ABAB9FC00A0C05E /* Model */,
+				F8AF75FC256B90FE00F32199 /* View */,
+				F8D9BDDD2567EBCA009028C8 /* AppDelegate.h */,
+				F8D9BDDE2567EBCA009028C8 /* AppDelegate.m */,
+				F8D9BDE02567EBCA009028C8 /* SceneDelegate.h */,
+				F8D9BDE12567EBCA009028C8 /* SceneDelegate.m */,
+				F8D9BDE32567EBCA009028C8 /* ViewController.h */,
+				F8D9BDE42567EBCA009028C8 /* ViewController.m */,
+				F8AF75FE256B914100F32199 /* DetailViewController.h */,
+				F8AF75FF256B914100F32199 /* DetailViewController.m */,
+				F8D9BE5D2567F0E1009028C8 /* Helper.h */,
+				F8D9BE5E2567F0E1009028C8 /* Helper.m */,
+				F8D9BDE62567EBCA009028C8 /* Main.storyboard */,
+				F8D9BDE92567EBCC009028C8 /* Assets.xcassets */,
+				F8D9BDEB2567EBCC009028C8 /* LaunchScreen.storyboard */,
+				F8D9BDEE2567EBCC009028C8 /* Info.plist */,
+				F8D9BDEF2567EBCC009028C8 /* main.m */,
+				F8AF75E3256B542E00F32199 /* PrefixHeader.pch */,
+			);
+			path = DosmonoDemo;
+			sourceTree = "<group>";
+		};
+		F8D9BDF82567EBCC009028C8 /* DosmonoDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D9BDF92567EBCC009028C8 /* DosmonoDemoTests.m */,
+				F8D9BDFB2567EBCC009028C8 /* Info.plist */,
+			);
+			path = DosmonoDemoTests;
+			sourceTree = "<group>";
+		};
+		F8D9BE032567EBCD009028C8 /* DosmonoDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D9BE042567EBCD009028C8 /* DosmonoDemoUITests.m */,
+				F8D9BE062567EBCD009028C8 /* Info.plist */,
+			);
+			path = DosmonoDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8D9BDD92567EBCA009028C8 /* DosmonoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D9BE092567EBCD009028C8 /* Build configuration list for PBXNativeTarget "DosmonoDemo" */;
+			buildPhases = (
+				8DAD645BD95CC3E3CB4A5797 /* [CP] Check Pods Manifest.lock */,
+				F8D9BDD62567EBCA009028C8 /* Sources */,
+				F8D9BDD72567EBCA009028C8 /* Frameworks */,
+				F8D9BDD82567EBCA009028C8 /* Resources */,
+				5ACC9FA3CBB5FFA00DF8C497 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DosmonoDemo;
+			packageProductDependencies = (
+			);
+			productName = DosmonoDemo;
+			productReference = F8D9BDDA2567EBCA009028C8 /* Whisprly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8D9BDF42567EBCC009028C8 /* DosmonoDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D9BE0C2567EBCD009028C8 /* Build configuration list for PBXNativeTarget "DosmonoDemoTests" */;
+			buildPhases = (
+				9076FF330CF37A6D250DA5F3 /* [CP] Check Pods Manifest.lock */,
+				F8D9BDF12567EBCC009028C8 /* Sources */,
+				F8D9BDF22567EBCC009028C8 /* Frameworks */,
+				F8D9BDF32567EBCC009028C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D9BDF72567EBCC009028C8 /* PBXTargetDependency */,
+			);
+			name = DosmonoDemoTests;
+			productName = DosmonoDemoTests;
+			productReference = F8D9BDF52567EBCC009028C8 /* DosmonoDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8D9BDFF2567EBCD009028C8 /* DosmonoDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D9BE0F2567EBCD009028C8 /* Build configuration list for PBXNativeTarget "DosmonoDemoUITests" */;
+			buildPhases = (
+				1829441ECEC67054C00EF9C8 /* [CP] Check Pods Manifest.lock */,
+				F8D9BDFC2567EBCD009028C8 /* Sources */,
+				F8D9BDFD2567EBCD009028C8 /* Frameworks */,
+				F8D9BDFE2567EBCD009028C8 /* Resources */,
+				85EEE44D37FAA4665E6C8C81 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D9BE022567EBCD009028C8 /* PBXTargetDependency */,
+			);
+			name = DosmonoDemoUITests;
+			productName = DosmonoDemoUITests;
+			productReference = F8D9BE002567EBCD009028C8 /* DosmonoDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8D9BDD22567EBCA009028C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					F8D9BDD92567EBCA009028C8 = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1430;
+					};
+					F8D9BDF42567EBCC009028C8 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = F8D9BDD92567EBCA009028C8;
+					};
+					F8D9BDFF2567EBCD009028C8 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = F8D9BDD92567EBCA009028C8;
+					};
+				};
+			};
+			buildConfigurationList = F8D9BDD52567EBCA009028C8 /* Build configuration list for PBXProject "DosmonoDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8D9BDD12567EBCA009028C8;
+			packageReferences = (
+			);
+			productRefGroup = F8D9BDDB2567EBCA009028C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8D9BDD92567EBCA009028C8 /* DosmonoDemo */,
+				F8D9BDF42567EBCC009028C8 /* DosmonoDemoTests */,
+				F8D9BDFF2567EBCD009028C8 /* DosmonoDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8D9BDD82567EBCA009028C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D9BDED2567EBCC009028C8 /* LaunchScreen.storyboard in Resources */,
+				B38948252ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.xib in Resources */,
+				F8D9BDEA2567EBCC009028C8 /* Assets.xcassets in Resources */,
+				F8D9BDE82567EBCA009028C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D9BDF32567EBCC009028C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D9BDFE2567EBCD009028C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1829441ECEC67054C00EF9C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DosmonoDemo-DosmonoDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ACC9FA3CBB5FFA00DF8C497 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DosmonoDemo/Pods-DosmonoDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DosmonoDemo/Pods-DosmonoDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DosmonoDemo/Pods-DosmonoDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85EEE44D37FAA4665E6C8C81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DosmonoDemo-DosmonoDemoUITests/Pods-DosmonoDemo-DosmonoDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DosmonoDemo-DosmonoDemoUITests/Pods-DosmonoDemo-DosmonoDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DosmonoDemo-DosmonoDemoUITests/Pods-DosmonoDemo-DosmonoDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DAD645BD95CC3E3CB4A5797 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DosmonoDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9076FF330CF37A6D250DA5F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DosmonoDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8D9BDD62567EBCA009028C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38948242ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.m in Sources */,
+				F8D9BDE52567EBCA009028C8 /* ViewController.m in Sources */,
+				F8D9BDDF2567EBCA009028C8 /* AppDelegate.m in Sources */,
+				F8D9BDF02567EBCC009028C8 /* main.m in Sources */,
+				F8AF7600256B914100F32199 /* DetailViewController.m in Sources */,
+				F8D9BDE22567EBCA009028C8 /* SceneDelegate.m in Sources */,
+				F8D9BE5F2567F0E1009028C8 /* Helper.m in Sources */,
+				F81DEDB8256E3E4800953C6C /* InstructionsListCell.m in Sources */,
+				F8AF75F8256B610F00F32199 /* DeviceListCell.m in Sources */,
+				F81DEDB2256E397200953C6C /* InstructionsList.m in Sources */,
+				B38948292ABABA1600A0C05E /* AudioFileListModel.m in Sources */,
+				F8AF75F2256B5F6D00F32199 /* DeviceList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D9BDF12567EBCC009028C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D9BDFA2567EBCC009028C8 /* DosmonoDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D9BDFC2567EBCD009028C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D9BE052567EBCD009028C8 /* DosmonoDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8D9BDF72567EBCC009028C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8D9BDD92567EBCA009028C8 /* DosmonoDemo */;
+			targetProxy = F8D9BDF62567EBCC009028C8 /* PBXContainerItemProxy */;
+		};
+		F8D9BE022567EBCD009028C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8D9BDD92567EBCA009028C8 /* DosmonoDemo */;
+			targetProxy = F8D9BE012567EBCD009028C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8D9BDE62567EBCA009028C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D9BDE72567EBCA009028C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8D9BDEB2567EBCC009028C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D9BDEC2567EBCC009028C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8D9BE072567EBCD009028C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8D9BE082567EBCD009028C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8D9BE0A2567EBCD009028C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EE5271DD3F33199FEA8F6A /* Pods-DosmonoDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGBJ3G49BN;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DosmonoDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = DosmonoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DosmonoDemo/View",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"Contacts\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Dosmono\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"FreeStreamer\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"YYModel\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cartlow.mobo;
+				PRODUCT_NAME = Whisprly;
+				SWIFT_OBJC_BRIDGING_HEADER = "DosmonoDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F8D9BE0B2567EBCD009028C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C47F30BDF3AC5F99BEA8F57A /* Pods-DosmonoDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGBJ3G49BN;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DosmonoDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = DosmonoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DosmonoDemo/View",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"Contacts\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Dosmono\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"FreeStreamer\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"YYModel\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cartlow.mobo;
+				PRODUCT_NAME = Whisprly;
+				SWIFT_OBJC_BRIDGING_HEADER = "DosmonoDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F8D9BE0D2567EBCD009028C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A863E8DEC49529902FE04A0B /* Pods-DosmonoDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59NML6ZW3Q;
+				INFOPLIST_FILE = DosmonoDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dosmono.demo.DosmonoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DosmonoDemo.app/DosmonoDemo";
+			};
+			name = Debug;
+		};
+		F8D9BE0E2567EBCD009028C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC20CFF2A361F2BD4E2E7E33 /* Pods-DosmonoDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59NML6ZW3Q;
+				INFOPLIST_FILE = DosmonoDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dosmono.demo.DosmonoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DosmonoDemo.app/DosmonoDemo";
+			};
+			name = Release;
+		};
+		F8D9BE102567EBCD009028C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D4823438499344B0F98FEA8 /* Pods-DosmonoDemo-DosmonoDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59NML6ZW3Q;
+				INFOPLIST_FILE = DosmonoDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dosmono.demo.DosmonoDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DosmonoDemo;
+			};
+			name = Debug;
+		};
+		F8D9BE112567EBCD009028C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E0807F66FE4EF5C0AB2178 /* Pods-DosmonoDemo-DosmonoDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59NML6ZW3Q;
+				INFOPLIST_FILE = DosmonoDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dosmono.demo.DosmonoDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DosmonoDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8D9BDD52567EBCA009028C8 /* Build configuration list for PBXProject "DosmonoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D9BE072567EBCD009028C8 /* Debug */,
+				F8D9BE082567EBCD009028C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D9BE092567EBCD009028C8 /* Build configuration list for PBXNativeTarget "DosmonoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D9BE0A2567EBCD009028C8 /* Debug */,
+				F8D9BE0B2567EBCD009028C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D9BE0C2567EBCD009028C8 /* Build configuration list for PBXNativeTarget "DosmonoDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D9BE0D2567EBCD009028C8 /* Debug */,
+				F8D9BE0E2567EBCD009028C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D9BE0F2567EBCD009028C8 /* Build configuration list for PBXNativeTarget "DosmonoDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D9BE102567EBCD009028C8 /* Debug */,
+				F8D9BE112567EBCD009028C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8D9BDD22567EBCA009028C8 /* Project object */;
+}

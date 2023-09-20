@@ -1,0 +1,32 @@
+Target dependency graph (10 targets)
+FMDB in Pods, no dependencies
+Reachability in Pods, no dependencies
+FreeStreamer in Pods, depends on:
+Reachability in Pods (explicit)
+SocketRocket in Pods, no dependencies
+YYModel in Pods, no dependencies
+Dosmono in Pods, depends on:
+FMDB in Pods (explicit)
+FreeStreamer in Pods (explicit)
+SocketRocket in Pods (explicit)
+YYModel in Pods (explicit)
+Masonry in Pods, no dependencies
+SVProgressHUD in Pods, no dependencies
+Pods-DosmonoDemo in Pods, depends on:
+Dosmono in Pods (explicit)
+FMDB in Pods (explicit)
+FreeStreamer in Pods (explicit)
+Masonry in Pods (explicit)
+Reachability in Pods (explicit)
+SVProgressHUD in Pods (explicit)
+SocketRocket in Pods (explicit)
+YYModel in Pods (explicit)
+DosmonoDemo in DosmonoDemo, depends on:
+Pods-DosmonoDemo in Pods (implicit dependency via file 'Pods_DosmonoDemo.framework' in build phase 'Link Binary')
+FMDB in Pods (implicit dependency via options '-framework FMDB' in build setting 'OTHER_LDFLAGS')
+FreeStreamer in Pods (implicit dependency via options '-framework FreeStreamer' in build setting 'OTHER_LDFLAGS')
+Masonry in Pods (implicit dependency via options '-framework Masonry' in build setting 'OTHER_LDFLAGS')
+Reachability in Pods (implicit dependency via options '-framework Reachability' in build setting 'OTHER_LDFLAGS')
+SVProgressHUD in Pods (implicit dependency via options '-framework SVProgressHUD' in build setting 'OTHER_LDFLAGS')
+SocketRocket in Pods (implicit dependency via options '-framework SocketRocket' in build setting 'OTHER_LDFLAGS')
+YYModel in Pods (implicit dependency via options '-framework YYModel' in build setting 'OTHER_LDFLAGS')

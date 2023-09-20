@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-DosmonoDemo-DosmonoDemoUITests/Pods-DosmonoDemo-DosmonoDemoUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${BUILT_PRODUCTS_DIR}/FreeStreamer/FreeStreamer.framework
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
+${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework
+${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework

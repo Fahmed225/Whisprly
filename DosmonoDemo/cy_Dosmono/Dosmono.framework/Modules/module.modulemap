@@ -1,0 +1,6 @@
+framework module Dosmono {
+  umbrella header "Dosmono.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,29 @@
+//
+//  Dosmono.pch
+//  Dosmono
+//
+//  Created by Sharp on 2022/1/4.
+//
+
+#ifndef Dosmono_pch
+#define Dosmono_pch
+
+#define kRecordRadioServiceUUID_FF              @"12345678-1234-5678-1234-56789ABCDEF"           //广播服务特征值的UUID
+#define kRecordServiceUUID_FF                   @"0011200a-2233-4455-6677-889912345678"           //服务特征值的UUID
+#define kRecordCharacteristicUUID_Read_GG       @"0011201a-2233-4455-6677-889912345678"           //读的特征值的UUID 接收音频数据
+#define kRecordCharacteristicUUID_Witer_GG      @"0011202a-2233-4455-6677-889912345678"           //写的特征值UUID 发送指令
+#define kRecordCharacteristicUUID_Notify_GG     @"0011203a-2233-4455-6677-889912345678"           //读的特征值UUID 接收指令
+#define kRecordCharacteristicUUID_OTA_GG        @"0011204a-2233-4455-6677-889912345678"           //读的特征值UUID OTA
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Dosmono.h"
+#import "TRConstant.h"
+#import "NSString+SwitchData.h"
+#import "NSData+SwitchData.h"
+#import "NSMutableArray+TRMutableArr.h"
+#import "NSData+JFUTF8.h"
+#import <UIKit/UIKit.h>
+
+#endif /* Dosmono_pch */
