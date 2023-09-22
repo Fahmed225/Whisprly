@@ -1,64 +1,100 @@
 //
-//  InstructionsList.m
+//  AudioListViewController.m
 //  DosmonoDemo
 //
-//  Created by 孙鹏 on 2020/11/25.
+//  Created by Imran Ishaq on 22/09/2023.
 //
 
-#import "InstructionsList.h"
-#import "InstructionsListCell.h"
-#import "AudioFilesListCollectionViewCell.h"
+#import "AudioListViewController.h"
 
-
-
-@interface InstructionsList () <UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
-{
-    NSInteger page;
-}
-
+@interface AudioListViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
 
 @property (nonatomic, strong) NSMutableArray<NSString *> *fileList;
+@property (nonatomic,weak)  NSTimer *timer;
+@property (nonatomic, strong) NSArray *instructions;
+
+
 @end
 
-@implementation InstructionsList
+@implementation AudioListViewController
 
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    _flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    _flowLayout.estimatedItemSize = CGSizeMake(kScreenWidth, 80);
-
-    if (self = [super initWithFrame:frame collectionViewLayout:_flowLayout]) {
-        self.delegate = self;
-        self.dataSource = self;
-        self.backgroundColor = [UIColor clearColor];
-        self.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
-        self.pagingEnabled = NO;
-        self.alwaysBounceHorizontal = YES;
-        self.alwaysBounceVertical = NO;
-        self.showsHorizontalScrollIndicator = NO;
-        self.showsVerticalScrollIndicator = NO;
-        
- //       [self registerClass:[AudioFilesListCollectionViewCell class] forCellWithReuseIdentifier:@"AudioFilesListCollectionViewCell"];
-
-        [self registerNib:[UINib nibWithNibName:@"AudioFilesListCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"AudioFilesListCollectionViewCell"];
-
-        
-        WEAKSELF
-        [DOSBleConnectImpl sharedInstance].onFileList = ^(NSArray<NSString *> * _Nonnull list) {
-            weakSelf.fileList = (NSMutableArray *)list;
-            NSLog(@"文件列表: %@", list);
-            [SVProgressHUD dismiss];
-        };
-        
-        NSLog(@"CollectionView Frame %f",frame);
-        
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+    
+    self.view.backgroundColor = UIColor.lightGrayColor;
+    self.collectionView.backgroundColor = UIColor.lightGrayColor;
+    self.collectionView.backgroundView.backgroundColor = UIColor.lightGrayColor;
+//    self.navigationController.navigationBar.backgroundColor = UIColor.whiteColor;
+    //切换到新的外设
+    if (_peripheral != nil) {
+        [[DOSBleConnectImpl sharedInstance] switchCurrentPeripheral:_peripheral];
+        NSLog(@"详情== %@", _peripheral);
     }
-    return self;
+    
+
+    
+    
+    self.instructions = [[NSArray alloc]init];
+    _instructions = @[
+        @"激活",
+        @"同步时间",
+        @"录音状态",
+        @"开始录音",
+        @"结束录音",
+        @"电量",
+        @"文件列表",
+        @"序列号",
+        @"禁用录音键",
+        @"启用录音键",
+        @"录音键状态",
+        @"上传文件",
+        @"停止上传",
+        @"删除文件",
+        @"开始解码",
+        @"停止解码",
+        @"获取文件",
+        @"暂停录音",
+        @"恢复录音",
+    ];
+    
+    
+    WEAKSELF
+    [DOSBleConnectImpl sharedInstance].onFileList = ^(NSArray<NSString *> * _Nonnull list) {
+//        weakSelf.instructions = (NSMutableArray *)list;
+//        NSLog(@"Audio files list: %@", list);
+//        [self.instructions arrayByAddingObjectsFromArray:list.copy];
+//        [self.collectionView reloadData];
+        [self createFilesModelList:list];
+        NSLog(@"Number OF files: %lu", list.count);
+        [SVProgressHUD dismiss];
+        [self.timer invalidate];
+    };
+    
+    [self SetupCollectionView];
+    [self createFilesModelList:_instructions];
+//    [self.collectionView reloadData];
 }
 
+-(void)SetupCollectionView{
+    _collectionView.delegate = self;
+    _collectionView.dataSource = self;
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:@"AudioFilesListCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"AudioFilesListCollectionViewCell"];
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 - (void)createFilesModelList:(NSArray*)list {
     _audioFilesList = [[NSMutableArray alloc]init];
     for(NSString *name in list) {
@@ -67,7 +103,7 @@
         [_audioFilesList addObject:item];
     }
     
-   // [self reloadData];
+    [self.collectionView reloadData];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -84,7 +120,7 @@
 {
     
     AudioFilesListCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AudioFilesListCollectionViewCell" forIndexPath:indexPath];
-    [cell reloadDataWithTitle:_audioFilesList[indexPath.row]];
+    [cell reloadDataWithTitle:_audioFilesList[indexPath.section]];
     return cell;
     
 }
@@ -111,7 +147,8 @@
     
     AudioFileListModel * file = _audioFilesList[indexPath.section];
     
-    [_audioFileDelegate giveMeFileName:file.getFilePath];
+    [self giveMeFileName:file.getFilePath];
+
     return;
     switch (indexPath.row) {
         case 0:
@@ -265,9 +302,26 @@
 {
    // CGSizeMake cellSize = CGSizeMake(kScreenWidth, 80);
     NSLog(@"%f",CGSizeMake(kScreenWidth, 80));
-    return CGSizeMake(kScreenWidth, 80);
+    return CGSizeMake(kScreenWidth, 70);
+}
+
+- (void)giveMeFileName:(NSString*)fileName {
+    
+    [self showAlertView:fileName];
+}
+
+-(void)showAlertView:(NSString *)path {
+    
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"File Path"
+                                   message:path
+                                   preferredStyle:UIAlertControllerStyleAlert];
+
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+       handler:^(UIAlertAction * action) {}];
+
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 
 @end
-

@@ -14,6 +14,17 @@
 		B38948252ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38948232ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.xib */; };
 		B38948292ABABA1600A0C05E /* AudioFileListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B38948282ABABA1600A0C05E /* AudioFileListModel.m */; };
 		B38948332ABB017000A0C05E /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38948322ABB016F00A0C05E /* Speech.framework */; };
+		B38DC8DC2ABC17A400D77156 /* OpenAIAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DC8D52ABC17A400D77156 /* OpenAIAPIModel.swift */; };
+		B38DC8DD2ABC17A400D77156 /* Iso639_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DC8D62ABC17A400D77156 /* Iso639_1.swift */; };
+		B38DC8DE2ABC17A400D77156 /* OpenAIAPIQueryParms.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DC8D72ABC17A400D77156 /* OpenAIAPIQueryParms.swift */; };
+		B38DC8DF2ABC17A400D77156 /* OpenAIAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DC8D82ABC17A400D77156 /* OpenAIAPI.swift */; };
+		B38DC8E02ABC17A400D77156 /* OpenAIAPIQueryResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DC8D92ABC17A400D77156 /* OpenAIAPIQueryResponses.swift */; };
+		B38DC8E12ABC17A400D77156 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DC8DA2ABC17A400D77156 /* WebService.swift */; };
+		B38DC8E22ABC17A400D77156 /* OpenAIAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DC8DB2ABC17A400D77156 /* OpenAIAPIConfig.swift */; };
+		B38DC8E42ABC2BE600D77156 /* OpenAPIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DC8E32ABC2BE600D77156 /* OpenAPIWrapper.swift */; };
+		B38DC8E62ABC2F7000D77156 /* poor-audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B38DC8E52ABC2F7000D77156 /* poor-audio.mp3 */; };
+		B38E99782ABD6F8E00B0C985 /* AudioListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38E99762ABD6F8E00B0C985 /* AudioListViewController.m */; };
+		B38E99792ABD6F8E00B0C985 /* AudioListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38E99772ABD6F8E00B0C985 /* AudioListViewController.xib */; };
 		F81DEDB2256E397200953C6C /* InstructionsList.m in Sources */ = {isa = PBXBuildFile; fileRef = F81DEDB1256E397200953C6C /* InstructionsList.m */; };
 		F81DEDB8256E3E4800953C6C /* InstructionsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F81DEDB7256E3E4800953C6C /* InstructionsListCell.m */; };
 		F8AF75F2256B5F6D00F32199 /* DeviceList.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AF75F1256B5F6D00F32199 /* DeviceList.m */; };
@@ -61,6 +72,19 @@
 		B38948272ABABA1600A0C05E /* AudioFileListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioFileListModel.h; sourceTree = "<group>"; };
 		B38948282ABABA1600A0C05E /* AudioFileListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioFileListModel.m; sourceTree = "<group>"; };
 		B38948322ABB016F00A0C05E /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		B38DC8D42ABC17A200D77156 /* DosmonoDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DosmonoDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B38DC8D52ABC17A400D77156 /* OpenAIAPIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIAPIModel.swift; sourceTree = "<group>"; };
+		B38DC8D62ABC17A400D77156 /* Iso639_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Iso639_1.swift; sourceTree = "<group>"; };
+		B38DC8D72ABC17A400D77156 /* OpenAIAPIQueryParms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIAPIQueryParms.swift; sourceTree = "<group>"; };
+		B38DC8D82ABC17A400D77156 /* OpenAIAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIAPI.swift; sourceTree = "<group>"; };
+		B38DC8D92ABC17A400D77156 /* OpenAIAPIQueryResponses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIAPIQueryResponses.swift; sourceTree = "<group>"; };
+		B38DC8DA2ABC17A400D77156 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		B38DC8DB2ABC17A400D77156 /* OpenAIAPIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIAPIConfig.swift; sourceTree = "<group>"; };
+		B38DC8E32ABC2BE600D77156 /* OpenAPIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAPIWrapper.swift; sourceTree = "<group>"; };
+		B38DC8E52ABC2F7000D77156 /* poor-audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "poor-audio.mp3"; sourceTree = "<group>"; };
+		B38E99752ABD6F8E00B0C985 /* AudioListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioListViewController.h; sourceTree = "<group>"; };
+		B38E99762ABD6F8E00B0C985 /* AudioListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioListViewController.m; sourceTree = "<group>"; };
+		B38E99772ABD6F8E00B0C985 /* AudioListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioListViewController.xib; sourceTree = "<group>"; };
 		B563CE75D06DA3526BAC38E3 /* Pods_DosmonoDemo_DosmonoDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DosmonoDemo_DosmonoDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47F30BDF3AC5F99BEA8F57A /* Pods-DosmonoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DosmonoDemo.release.xcconfig"; path = "Target Support Files/Pods-DosmonoDemo/Pods-DosmonoDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CC20CFF2A361F2BD4E2E7E33 /* Pods-DosmonoDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DosmonoDemoTests.release.xcconfig"; path = "Target Support Files/Pods-DosmonoDemoTests/Pods-DosmonoDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +183,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		B38DC8C52ABC16F000D77156 /* OpenAI */ = {
+			isa = PBXGroup;
+			children = (
+				B38DC8D62ABC17A400D77156 /* Iso639_1.swift */,
+				B38DC8D82ABC17A400D77156 /* OpenAIAPI.swift */,
+				B38DC8DB2ABC17A400D77156 /* OpenAIAPIConfig.swift */,
+				B38DC8D52ABC17A400D77156 /* OpenAIAPIModel.swift */,
+				B38DC8D72ABC17A400D77156 /* OpenAIAPIQueryParms.swift */,
+				B38DC8D92ABC17A400D77156 /* OpenAIAPIQueryResponses.swift */,
+				B38DC8DA2ABC17A400D77156 /* WebService.swift */,
+				B38DC8D42ABC17A200D77156 /* DosmonoDemo-Bridging-Header.h */,
+				B38DC8E32ABC2BE600D77156 /* OpenAPIWrapper.swift */,
+			);
+			path = OpenAI;
+			sourceTree = "<group>";
+		};
+		B38E99742ABD6F6800B0C985 /* AudioListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B38E99752ABD6F8E00B0C985 /* AudioListViewController.h */,
+				B38E99762ABD6F8E00B0C985 /* AudioListViewController.m */,
+				B38E99772ABD6F8E00B0C985 /* AudioListViewController.xib */,
+			);
+			path = AudioListViewController;
+			sourceTree = "<group>";
+		};
 		F8AF75FC256B90FE00F32199 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +252,9 @@
 		F8D9BDDC2567EBCA009028C8 /* DosmonoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B38E99742ABD6F6800B0C985 /* AudioListViewController */,
+				B38DC8E52ABC2F7000D77156 /* poor-audio.mp3 */,
+				B38DC8C52ABC16F000D77156 /* OpenAI */,
 				B38948262ABAB9FC00A0C05E /* Model */,
 				F8AF75FC256B90FE00F32199 /* View */,
 				F8D9BDDD2567EBCA009028C8 /* AppDelegate.h */,
@@ -357,7 +410,9 @@
 				F8D9BDED2567EBCC009028C8 /* LaunchScreen.storyboard in Resources */,
 				B38948252ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.xib in Resources */,
 				F8D9BDEA2567EBCC009028C8 /* Assets.xcassets in Resources */,
+				B38DC8E62ABC2F7000D77156 /* poor-audio.mp3 in Resources */,
 				F8D9BDE82567EBCA009028C8 /* Main.storyboard in Resources */,
+				B38E99792ABD6F8E00B0C985 /* AudioListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,18 +540,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38DC8E12ABC17A400D77156 /* WebService.swift in Sources */,
+				B38DC8E22ABC17A400D77156 /* OpenAIAPIConfig.swift in Sources */,
+				B38DC8DF2ABC17A400D77156 /* OpenAIAPI.swift in Sources */,
 				B38948242ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.m in Sources */,
 				F8D9BDE52567EBCA009028C8 /* ViewController.m in Sources */,
 				F8D9BDDF2567EBCA009028C8 /* AppDelegate.m in Sources */,
 				F8D9BDF02567EBCC009028C8 /* main.m in Sources */,
+				B38E99782ABD6F8E00B0C985 /* AudioListViewController.m in Sources */,
+				B38DC8DE2ABC17A400D77156 /* OpenAIAPIQueryParms.swift in Sources */,
 				F8AF7600256B914100F32199 /* DetailViewController.m in Sources */,
 				F8D9BDE22567EBCA009028C8 /* SceneDelegate.m in Sources */,
 				F8D9BE5F2567F0E1009028C8 /* Helper.m in Sources */,
 				F81DEDB8256E3E4800953C6C /* InstructionsListCell.m in Sources */,
+				B38DC8E42ABC2BE600D77156 /* OpenAPIWrapper.swift in Sources */,
+				B38DC8DC2ABC17A400D77156 /* OpenAIAPIModel.swift in Sources */,
 				F8AF75F8256B610F00F32199 /* DeviceListCell.m in Sources */,
+				B38DC8DD2ABC17A400D77156 /* Iso639_1.swift in Sources */,
 				F81DEDB2256E397200953C6C /* InstructionsList.m in Sources */,
 				B38948292ABABA1600A0C05E /* AudioFileListModel.m in Sources */,
 				F8AF75F2256B5F6D00F32199 /* DeviceList.m in Sources */,
+				B38DC8E02ABC17A400D77156 /* OpenAIAPIQueryResponses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +733,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6EE5271DD3F33199FEA8F6A /* Pods-DosmonoDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -741,7 +806,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cartlow.mobo;
 				PRODUCT_NAME = Whisprly;
-				SWIFT_OBJC_BRIDGING_HEADER = "DosmonoDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DosmonoDemo/OpenAI/DosmonoDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -752,6 +817,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C47F30BDF3AC5F99BEA8F57A /* Pods-DosmonoDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -824,7 +890,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cartlow.mobo;
 				PRODUCT_NAME = Whisprly;
-				SWIFT_OBJC_BRIDGING_HEADER = "DosmonoDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DosmonoDemo/OpenAI/DosmonoDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -834,6 +900,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A863E8DEC49529902FE04A0B /* Pods-DosmonoDemoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59NML6ZW3Q;
@@ -855,6 +922,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC20CFF2A361F2BD4E2E7E33 /* Pods-DosmonoDemoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59NML6ZW3Q;
@@ -876,6 +944,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D4823438499344B0F98FEA8 /* Pods-DosmonoDemo-DosmonoDemoUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59NML6ZW3Q;
 				INFOPLIST_FILE = DosmonoDemoUITests/Info.plist;
@@ -895,6 +964,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 70E0807F66FE4EF5C0AB2178 /* Pods-DosmonoDemo-DosmonoDemoUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59NML6ZW3Q;
 				INFOPLIST_FILE = DosmonoDemoUITests/Info.plist;

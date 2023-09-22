@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray *audioFilesList;
 @property (nonatomic, weak) id <InstructionsListDelegate> audioFileDelegate;
-
+- (void)createFilesModelList:(NSArray*)list;
 @end
 
 NS_ASSUME_NONNULL_END

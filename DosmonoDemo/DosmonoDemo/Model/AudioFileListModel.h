@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString * isFileTranslated;
 
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary;
-
+-(NSString *)getFilePath;
 -(NSDictionary *)toDictionary;
 @end
 

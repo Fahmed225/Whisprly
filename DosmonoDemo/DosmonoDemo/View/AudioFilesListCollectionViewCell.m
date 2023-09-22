@@ -13,11 +13,15 @@
     [super awakeFromNib];
     // Initialization code
     
-    self.dataContainerView.layer.cornerRadius = 8.0;
+    self.dataContainerView.layer.cornerRadius = 5.0;
+    self.backgroundView.backgroundColor = UIColor.lightGrayColor;
+    self.backgroundColor = UIColor.lightGrayColor;
+    
 }
 
 - (void)reloadDataWithTitle:(AudioFileListModel*)model {
     self.titleLabel.text = model.fileName;
+    self.titleLabel.textColor = UIColor.redColor;
 }
 
 @end

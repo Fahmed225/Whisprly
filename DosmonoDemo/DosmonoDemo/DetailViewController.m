@@ -6,6 +6,8 @@
 //
 
 #import "DetailViewController.h"
+#import "Whisprly-Swift.h"
+
 
 
 @interface DetailViewController ()
@@ -14,6 +16,7 @@
 @property (nonatomic, strong) NSMutableArray *audioFilesList;
 @property (nonatomic, strong) InstructionsList *instructionsList;
 @property (nonatomic,weak)  NSTimer *timer;
+
 @end
 
 
@@ -25,30 +28,37 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
     //切换到新的外设
-    [[DOSBleConnectImpl sharedInstance] switchCurrentPeripheral:_peripheral];
+    if (_peripheral != nil) {
+        [[DOSBleConnectImpl sharedInstance] switchCurrentPeripheral:_peripheral];
+        NSLog(@"详情== %@", _peripheral);
+
+    }
+    
+
+    
     
     self.instructions = [[NSArray alloc]init];
-//    _instructions = @[
-//        @"激活",
-//        @"同步时间",
-//        @"录音状态",
-//        @"开始录音",
-//        @"结束录音",
-//        @"电量",
-//        @"文件列表",
-//        @"序列号",
-//        @"禁用录音键",
-//        @"启用录音键",
-//        @"录音键状态",
-//        @"上传文件",
-//        @"停止上传",
-//        @"删除文件",
-//        @"开始解码",
-//        @"停止解码",
-//        @"获取文件",
-//        @"暂停录音",
-//        @"恢复录音",
-//    ];
+    _instructions = @[
+        @"激活",
+        @"同步时间",
+        @"录音状态",
+        @"开始录音",
+        @"结束录音",
+        @"电量",
+        @"文件列表",
+        @"序列号",
+        @"禁用录音键",
+        @"启用录音键",
+        @"录音键状态",
+        @"上传文件",
+        @"停止上传",
+        @"删除文件",
+        @"开始解码",
+        @"停止解码",
+        @"获取文件",
+        @"暂停录音",
+        @"恢复录音",
+    ];
     
     
     WEAKSELF
@@ -64,11 +74,11 @@
     
     
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(timerCalled) userInfo:nil repeats:NO];
+ //   self.timer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(timerCalled) userInfo:nil repeats:NO];
     
     [self setCallback];
-    NSLog(@"详情== %@", _peripheral);
     
+    [self setLayout];
 
 
     
@@ -101,7 +111,9 @@
 
 - (InstructionsList *)instructionsList {
     if (!_instructionsList) {
-        _instructionsList = [[InstructionsList alloc] initWithFrame:CGRectZero];
+        _instructionsList = [[InstructionsList alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+        _instructionsList.backgroundColor = UIColor.redColor;
+        _instructionsList.audioFileDelegate = self;
     }
     
     return _instructionsList;
@@ -110,7 +122,8 @@
 - (void)setLayout {
     
     self.instructionsList.dataArray = _instructions;
-    [_instructionsList reloadData];
+    [self.instructionsList createFilesModelList:_instructions];
+   // [_instructionsList reloadData];
     [self.view addSubview:_instructionsList];
     
     [self.instructionsList audioFileDelegate];
@@ -121,6 +134,7 @@
         make.height.mas_equalTo(self.view.frame.size.height);
     }];
     
+    [_instructionsList reloadData];
         
 }
 
@@ -203,6 +217,10 @@
 
 - (void)dealloc {
     
+}
+
+- (void) translateAudioToTextUsingOpenAIApi{
+    [AppController translateAUdioFile];
 }
 
 /*

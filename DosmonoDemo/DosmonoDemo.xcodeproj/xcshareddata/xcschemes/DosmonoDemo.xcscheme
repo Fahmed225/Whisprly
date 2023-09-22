@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F8D9BDD92567EBCA009028C8"
-               BuildableName = "DosmonoDemo.app"
+               BuildableName = "Whisprly.app"
                BlueprintName = "DosmonoDemo"
                ReferencedContainer = "container:DosmonoDemo.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8D9BDD92567EBCA009028C8"
-            BuildableName = "DosmonoDemo.app"
+            BuildableName = "Whisprly.app"
             BlueprintName = "DosmonoDemo"
             ReferencedContainer = "container:DosmonoDemo.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8D9BDD92567EBCA009028C8"
-            BuildableName = "DosmonoDemo.app"
+            BuildableName = "Whisprly.app"
             BlueprintName = "DosmonoDemo"
             ReferencedContainer = "container:DosmonoDemo.xcodeproj">
          </BuildableReference>

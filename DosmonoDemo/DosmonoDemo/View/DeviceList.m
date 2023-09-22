@@ -8,6 +8,7 @@
 #import "DeviceList.h"
 #import "DeviceListCell.h"
 #import "DetailViewController.h"
+#import "AudioListViewController.h"
 
 @interface DeviceList () <UITableViewDelegate, UITableViewDataSource>
 
@@ -34,7 +35,19 @@
         }
       
     }
+    
+    
+    [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(timerCalled) userInfo:nil repeats:NO];
+
+    
     return self;
+}
+
+-(void)timerCalled{
+    AudioListViewController *vc = [[AudioListViewController alloc] init];
+//    vc.peripheral = peripheral;
+//    vc.title = peripheral.name;
+    [[Helper viewController:self].navigationController pushViewController:vc animated:YES];
 }
 
 

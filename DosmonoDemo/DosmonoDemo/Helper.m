@@ -23,4 +23,18 @@
     return nil;
 }
 
++(void)saveAudioFilesInfo:(NSMutableArray*)list {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:list forKey:@"audioList"];
+    [userDefaults synchronize];
+}
+
++(NSMutableArray *)getAudioFilesList {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *files = [userDefaults objectForKey:@"audioList"];
+    
+    return files;
+}
+
+
 @end

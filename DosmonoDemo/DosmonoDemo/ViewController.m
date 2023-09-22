@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "DeviceList.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -48,6 +49,10 @@
         }];
         [self.deviceList reloadData];
     });
+    
+    //TEsting
+    
+
 
 }
 
