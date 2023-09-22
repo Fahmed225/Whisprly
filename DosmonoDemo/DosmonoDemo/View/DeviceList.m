@@ -9,6 +9,8 @@
 #import "DeviceListCell.h"
 #import "DetailViewController.h"
 #import "AudioListViewController.h"
+#import "AudioListViewController.h"
+
 
 @interface DeviceList () <UITableViewDelegate, UITableViewDataSource>
 
@@ -98,7 +100,9 @@
         [SVProgressHUD dismissWithDelay:1.0];
         return;
     }
-    DetailViewController *vc = [[DetailViewController alloc] init];
+    
+//    audiofilelist
+    AudioListViewController *vc = [[AudioListViewController alloc] init];
     vc.peripheral = peripheral;
     vc.title = peripheral.name;
     [[Helper viewController:self].navigationController pushViewController:vc animated:YES];
