@@ -37,28 +37,28 @@
 
     
     
-    self.instructions = [[NSArray alloc]init];
-    _instructions = @[
-        @"激活",
-        @"同步时间",
-        @"录音状态",
-        @"开始录音",
-        @"结束录音",
-        @"电量",
-        @"文件列表",
-        @"序列号",
-        @"禁用录音键",
-        @"启用录音键",
-        @"录音键状态",
-        @"上传文件",
-        @"停止上传",
-        @"删除文件",
-        @"开始解码",
-        @"停止解码",
-        @"获取文件",
-        @"暂停录音",
-        @"恢复录音",
-    ];
+//    self.instructions = [[NSArray alloc]init];
+//    _instructions = @[
+//        @"激活",
+//        @"同步时间",
+//        @"录音状态",
+//        @"开始录音",
+//        @"结束录音",
+//        @"电量",
+//        @"文件列表",
+//        @"序列号",
+//        @"禁用录音键",
+//        @"启用录音键",
+//        @"录音键状态",
+//        @"上传文件",
+//        @"停止上传",
+//        @"删除文件",
+//        @"开始解码",
+//        @"停止解码",
+//        @"获取文件",
+//        @"暂停录音",
+//        @"恢复录音",
+//    ];
     
     
     WEAKSELF
@@ -74,11 +74,11 @@
     
     
     
- //   self.timer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(timerCalled) userInfo:nil repeats:NO];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(timerCalled) userInfo:nil repeats:NO];
     
     [self setCallback];
     
-    [self setLayout];
+//    [self setLayout];
 
 
     
@@ -220,7 +220,7 @@
 }
 
 - (void) translateAudioToTextUsingOpenAIApi{
-    [AppController translateAUdioFile];
+  //  [AppController translateAUdioFile];
 }
 
 /*

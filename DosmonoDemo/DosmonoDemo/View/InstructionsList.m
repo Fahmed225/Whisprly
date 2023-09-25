@@ -111,7 +111,14 @@
     
     AudioFileListModel * file = _audioFilesList[indexPath.section];
     
-    [_audioFileDelegate giveMeFileName:file.getFilePath];
+//    [_audioFileDelegate giveMeFileName:file.getFilePath];
+//    [[DOSBleRecordImpl sharedInstance] startDecode:self.decodePath];
+    
+    NSString *path = [[DOSBleRecordImpl sharedInstance] getLocalFilePath:file.fileName];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    NSLog(@"data= %@", data);
+    [[DOSBleRecordImpl sharedInstance] startTransferWithFileName:@"Fahad_sample_audio" startPoint:data.length  keepFile:NO];
+    
     return;
     switch (indexPath.row) {
         case 0:

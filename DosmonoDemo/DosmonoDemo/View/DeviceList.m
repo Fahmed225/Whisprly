@@ -39,7 +39,7 @@
     }
     
     
-    [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(timerCalled) userInfo:nil repeats:NO];
+   // [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(timerCalled) userInfo:nil repeats:NO];
 
     
     return self;
@@ -102,11 +102,15 @@
     }
     
 //    audiofilelist
-    AudioListViewController *vc = [[AudioListViewController alloc] init];
+//    AudioListViewController *vc = [[AudioListViewController alloc] init];
+//    vc.peripheral = peripheral;
+//    vc.title = peripheral.name;
+//    [[Helper viewController:self].navigationController pushViewController:vc animated:YES];
+  
+    DetailViewController *vc = [[DetailViewController alloc] init];
     vc.peripheral = peripheral;
     vc.title = peripheral.name;
     [[Helper viewController:self].navigationController pushViewController:vc animated:YES];
-    
 }
 
 - (void)appendDevice:(CBPeripheral *)peripheral {

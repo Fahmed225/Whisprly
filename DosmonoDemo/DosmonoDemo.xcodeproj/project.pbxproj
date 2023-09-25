@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0D9A67A76707DFD7EA759CD9 /* Pods_DosmonoDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0830225FAB484FC3B19E625E /* Pods_DosmonoDemoTests.framework */; };
+		2E506F272ABDF248003CA678 /* 01_20230511231113.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2E506F262ABDF248003CA678 /* 01_20230511231113.wav */; };
 		3B90AA2C67A4CBC44A2D0A9C /* Pods_DosmonoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEA40939E4C43018D0E65A2 /* Pods_DosmonoDemo.framework */; };
 		76FD77193EB5EADCACCC03A7 /* Pods_DosmonoDemo_DosmonoDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B563CE75D06DA3526BAC38E3 /* Pods_DosmonoDemo_DosmonoDemoUITests.framework */; };
 		B38948242ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B38948222ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.m */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		0830225FAB484FC3B19E625E /* Pods_DosmonoDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DosmonoDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E506F262ABDF248003CA678 /* 01_20230511231113.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 01_20230511231113.wav; sourceTree = "<group>"; };
 		3D4823438499344B0F98FEA8 /* Pods-DosmonoDemo-DosmonoDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DosmonoDemo-DosmonoDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-DosmonoDemo-DosmonoDemoUITests/Pods-DosmonoDemo-DosmonoDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3DEA40939E4C43018D0E65A2 /* Pods_DosmonoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DosmonoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E0807F66FE4EF5C0AB2178 /* Pods-DosmonoDemo-DosmonoDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DosmonoDemo-DosmonoDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-DosmonoDemo-DosmonoDemoUITests/Pods-DosmonoDemo-DosmonoDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				B38E99752ABD6F8E00B0C985 /* AudioListViewController.h */,
 				B38E99762ABD6F8E00B0C985 /* AudioListViewController.m */,
 				B38E99772ABD6F8E00B0C985 /* AudioListViewController.xib */,
+				2E506F262ABDF248003CA678 /* 01_20230511231113.wav */,
 			);
 			path = AudioListViewController;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				F8D9BDED2567EBCC009028C8 /* LaunchScreen.storyboard in Resources */,
 				B38948252ABAB01E00A0C05E /* AudioFilesListCollectionViewCell.xib in Resources */,
 				F8D9BDEA2567EBCC009028C8 /* Assets.xcassets in Resources */,
+				2E506F272ABDF248003CA678 /* 01_20230511231113.wav in Resources */,
 				B38DC8E62ABC2F7000D77156 /* poor-audio.mp3 in Resources */,
 				F8D9BDE82567EBCA009028C8 /* Main.storyboard in Resources */,
 				B38E99792ABD6F8E00B0C985 /* AudioListViewController.xib in Resources */,
@@ -738,7 +742,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FGBJ3G49BN;
+				DEVELOPMENT_TEAM = YU6J222933;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DosmonoDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = DosmonoDemo/Info.plist;
@@ -804,7 +808,7 @@
 					"-framework",
 					"\"YYModel\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cartlow.mobo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fahad.watch;
 				PRODUCT_NAME = Whisprly;
 				SWIFT_OBJC_BRIDGING_HEADER = "DosmonoDemo/OpenAI/DosmonoDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -822,7 +826,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FGBJ3G49BN;
+				DEVELOPMENT_TEAM = YU6J222933;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DosmonoDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = DosmonoDemo/Info.plist;
@@ -888,7 +892,7 @@
 					"-framework",
 					"\"YYModel\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cartlow.mobo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fahad.watch;
 				PRODUCT_NAME = Whisprly;
 				SWIFT_OBJC_BRIDGING_HEADER = "DosmonoDemo/OpenAI/DosmonoDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

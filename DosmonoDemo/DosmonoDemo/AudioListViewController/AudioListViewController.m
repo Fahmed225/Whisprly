@@ -6,6 +6,7 @@
 //
 
 #import "AudioListViewController.h"
+#import "Whisprly-Swift.h"
 
 @interface AudioListViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -164,6 +165,8 @@
     AudioFileListModel * file = _audioFilesList[indexPath.section];
     
     [self giveMeFileName:file.getFilePath];
+    
+    [AppController translateAUdioFileWithFileName:file.getFilePath];
 
     return;
     switch (indexPath.row) {

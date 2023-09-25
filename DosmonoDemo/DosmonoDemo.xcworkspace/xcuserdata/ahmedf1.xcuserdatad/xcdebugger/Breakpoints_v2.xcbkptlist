@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B23621F9-670C-43F8-9424-42FB9429F983"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1802E560-914B-4B37-AFE9-CE596947F2E4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DosmonoDemo/OpenAI/OpenAPIWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "translateAUdioFile(fileName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1802E560-914B-4B37-AFE9-CE596947F2E4 - f8e464f99e457268"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Dead&gt; of static Whisprly.AppController.translateAUdioFile(fileName: Swift.String) -&gt; ()"
+                  moduleName = "Whisprly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedf1/Documents/SourceCode/Whisprly/DosmonoDemo/DosmonoDemo/OpenAI/OpenAPIWrapper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  uuid = "1802E560-914B-4B37-AFE9-CE596947F2E4 - f8e464f99e45724b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Dead&gt; of static Whisprly.AppController.translateAUdioFile(fileName: Swift.String) -&gt; ()"
+                  moduleName = "Whisprly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedf1/Documents/SourceCode/Whisprly/DosmonoDemo/DosmonoDemo/OpenAI/OpenAPIWrapper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  uuid = "1802E560-914B-4B37-AFE9-CE596947F2E4 - f8e464f99e45724b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Dead&gt; of static Whisprly.AppController.translateAUdioFile(fileName: Swift.String) -&gt; ()"
+                  moduleName = "Whisprly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedf1/Documents/SourceCode/Whisprly/DosmonoDemo/DosmonoDemo/OpenAI/OpenAPIWrapper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "1096">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39D05CC2-39B7-493D-A498-4F51614D4FE0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DosmonoDemo/OpenAI/OpenAPIWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "translateAUdioFile(fileName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "39D05CC2-39B7-493D-A498-4F51614D4FE0 - f8e464f99e457153"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Dead&gt; of static Whisprly.AppController.translateAUdioFile(fileName: Swift.String) -&gt; ()"
+                  moduleName = "Whisprly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedf1/Documents/SourceCode/Whisprly/DosmonoDemo/DosmonoDemo/OpenAI/OpenAPIWrapper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  uuid = "39D05CC2-39B7-493D-A498-4F51614D4FE0 - f8e464f99e457132"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Dead&gt; of static Whisprly.AppController.translateAUdioFile(fileName: Swift.String) -&gt; ()"
+                  moduleName = "Whisprly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedf1/Documents/SourceCode/Whisprly/DosmonoDemo/DosmonoDemo/OpenAI/OpenAPIWrapper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "748">
+               </Location>
+               <Location
+                  uuid = "39D05CC2-39B7-493D-A498-4F51614D4FE0 - f8e464f99e457132"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Dead&gt; of static Whisprly.AppController.translateAUdioFile(fileName: Swift.String) -&gt; ()"
+                  moduleName = "Whisprly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedf1/Documents/SourceCode/Whisprly/DosmonoDemo/DosmonoDemo/OpenAI/OpenAPIWrapper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "964">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B61EBF50-A5A2-434F-86E4-103D3532DD5A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DosmonoDemo/OpenAI/OpenAPIWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "translateAUdioFile(fileName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B61EBF50-A5A2-434F-86E4-103D3532DD5A - f8e464f99e457381"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Dead&gt; of static Whisprly.AppController.translateAUdioFile(fileName: Swift.String) -&gt; ()"
+                  moduleName = "Whisprly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedf1/Documents/SourceCode/Whisprly/DosmonoDemo/DosmonoDemo/OpenAI/OpenAPIWrapper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "408">
+               </Location>
+               <Location
+                  uuid = "B61EBF50-A5A2-434F-86E4-103D3532DD5A - f8e464f99e4573e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Dead&gt; of static Whisprly.AppController.translateAUdioFile(fileName: Swift.String) -&gt; ()"
+                  moduleName = "Whisprly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedf1/Documents/SourceCode/Whisprly/DosmonoDemo/DosmonoDemo/OpenAI/OpenAPIWrapper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  uuid = "B61EBF50-A5A2-434F-86E4-103D3532DD5A - f8e464f99e457360"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Dead&gt; of static Whisprly.AppController.translateAUdioFile(fileName: Swift.String) -&gt; ()"
+                  moduleName = "Whisprly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedf1/Documents/SourceCode/Whisprly/DosmonoDemo/DosmonoDemo/OpenAI/OpenAPIWrapper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "1020">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25955BB8-13A2-4F79-B585-0A810C0D2BA2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DosmonoDemo/AudioListViewController/AudioListViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "372"
+            endingLineNumber = "372"
+            landmarkName = "-setCallback"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBF9A02E-E54E-4D0D-B21E-E4197D466C60"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DosmonoDemo/AudioListViewController/AudioListViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "379"
+            endingLineNumber = "379"
+            landmarkName = "-setCallback"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9550C872-7DBC-4CED-82CA-956AA457DA92"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DosmonoDemo/DetailViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "-setCallback"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "874FFADD-D01D-486C-BCBA-B95D7C6F2E10"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DosmonoDemo/DetailViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "-setCallback"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1B54CDA-4AAF-4ABD-9294-1264F2F24F42"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DosmonoDemo/DetailViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1F23756-30E2-48E6-9A29-49428249A0BB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DosmonoDemo/View/InstructionsList.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "-collectionView:didSelectItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
